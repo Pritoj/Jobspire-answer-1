@@ -1,0 +1,24 @@
+//Answer in javascript.
+//If you're really going to say javascript is not
+//a server side language
+//I want to refer you to Node js
+
+//also this is in ES6
+
+
+//it takes name as a param
+
+// This problem can be broken down as 
+// generate anumber between 0 and 9 (15-6) and add it to 6
+
+
+//Math.random give a number between 0(inclusive) & 1(exclusive)
+//so we get a random number and multiply it 
+//by 10, and then floor it. This will give a number between 0 & 9
+//we just add a 6
+//and add the name
+
+//P.S. the braces around the MAth.random thing are important else 
+//the 6 is concatenated as a string instead of added.
+
+var rand = (name) => name + " " + (Math.floor(Math.random()*10)+6);
